@@ -1,5 +1,5 @@
 export function getAllStarships() {
-    const url = `https://swapi.co/api/starships/`;
-    return fetch(url, { mode: cors })
+    const url = `https://swapi.co/api/`;
+    return fetch(`${url}starships`)
         .then(res => res.json());
 }
